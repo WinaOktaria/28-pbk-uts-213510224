@@ -36,7 +36,7 @@ function removeTodo(todo) {
 			</h1><hr><hr>
 		</section>
     <section class="create-todo">
-			<h3><b>Isi List Tugas Yang Akan di Lakukan!</b></h3>
+			<h3><b>Isi List Tugas Yang Akan di Lakukan</b></h3>
   <form id="new-todo-form" @submit.prevent="addTodo">
     <input type="text" 
 					name="content" 
