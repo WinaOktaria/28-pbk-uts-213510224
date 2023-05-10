@@ -1,12 +1,13 @@
 <template>
 	<div id="nav">
-		<router-link to="/">Home</router-link> |
-		<router-link :to="{ name: 'About' }">About</router-link> |
-		<router-link :to="{ name: 'Todo' }">To Do List</router-link> |
-        <router-link :to="{ name: 'contact' }">Contact Us</router-link> |
-	</div>
-	
-	<router-view></router-view>
+		<router-link to="/">Home</router-link>
+		<router-link :to="{ name: 'Todo' }">To Do List</router-link>
+        <router-link :to="{ name: 'About' }">About</router-link>
+        <router-link :to="{ name: 'contact' }">Contact Us</router-link>
+        
+    </div>
+    
+    <router-view></router-view>	
 </template>
 <style>
 
@@ -14,23 +15,25 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
+    background-color: white;
 }
 #nav {
-    padding: 30px;
-}
-
-#nav a {
-    font-weight: bold;
-    color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  #nav a {
+    color: #fff;
     text-decoration: none;
-    padding: 1opx;
-    border-radius: 4x;
-}
-
-#nav a.router-link-exact-active {
-    color: white;
-    background: crimson;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  #nav a:hover {
+  text-decoration: underline;
+  background-color: grey;
 }
 </style>
