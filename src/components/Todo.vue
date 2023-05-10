@@ -31,9 +31,7 @@ function removeTodo(todo) {
   <main class="app">
 		
 		<section class="greeting">
-			<h1 class="title"><b>
-				<marquee scrolldelay="100" direction="right">WELCOME TO DO WINA TUGAS !</marquee></b>
-			</h1><hr><hr>
+			<hr><hr>
 		</section>
     <section class="create-todo">
 			<h3><b>Isi List Tugas Yang Akan di Lakukan!</b></h3>
@@ -115,7 +113,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 body {
 	background: var(--light);
 	color: var(--dark);
-	background-color:#DEB887;
+	background-color:white;
 	padding-left: 30px;
 	background-image: url('bakgound.jpg');
 }
